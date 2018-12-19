@@ -52,4 +52,23 @@ func main() {
 		fmt.Println("Go Vote\n ")
 
 	}
-}
+
+	var faNums2 [5]float64 // an array of max size 5 of type float
+	faNums2[0] = 123
+	faNums2[1] = 4123
+	faNums2[2] = 1223
+	faNums2[3] = 12223
+	faNums2[4] = 12.3
+
+	fmt.Println("faNums2[3]", faNums2[3], "\n")
+
+	// shorthand
+	favNums3 := [5]float64{1, 2, 3, 4, 5}
+
+	// iterate array
+	for i, value := range favNums3 { // can use _ instead of i if not needed
+		fmt.Println(value, i)
+
+	}
+
+} // end of main
